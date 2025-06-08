@@ -1,6 +1,49 @@
-<html>
-<p>kaixo</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuestionario de Ejemplo</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        .question { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"] { width: 300px; padding: 8px; }
+        button { padding: 10px 20px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Cuestionario de Ejemplo</h1>
+    <form action="#" method="post">
+        <!-- Pregunta 1: Opción múltiple -->
+        <div class="question">
+            <h3>1. ¿Cuál es tu color favorito?</h3>
+            <label><input type="radio" name="color" value="rojo"> Rojo</label>
+            <label><input type="radio" name="color" value="azul"> Azul</label>
+            <label><input type="radio" name="color" value="verde"> Verde</label>
+        </div>
+
+        <!-- Pregunta 2: Opción múltiple -->
+        <div class="question">
+            <h3>2. ¿Qué tipo de música prefieres?</h3>
+            <label><input type="checkbox" name="musica" value="rock"> Rock</label>
+            <label><input type="checkbox" name="musica" value="pop"> Pop</label>
+            <label><input type="checkbox" name="musica" value="clasica"> Clásica</label>
+        </div>
+
+        <!-- Pregunta 3: Campo de texto -->
+        <div class="question">
+            <h3>3. ¿Por qué te gusta ese género de música?</h3>
+            <textarea name="razon" rows="4" cols="50"></textarea>
+        </div>
+
+        <!-- Pregunta 4: Campo de texto corto -->
+        <div class="question">
+            <h3>4. ¿Cuál es tu nombre?</h3>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre aquí">
+        </div>
+
+        <button type="submit">Enviar Cuestionario</button>
+    </form>
+</body>
 </html>
-<script>
-  
-</script>
